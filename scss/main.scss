@@ -1,0 +1,152 @@
+@import './colors';
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Overpass', sans-serif;
+	background-color: $very-dark-blue;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	font-size: 1.4rem;
+}
+
+.card {
+	width: 100%;
+	max-width: 325px;
+	padding: 1.8em;
+	border-radius: 15px;
+	background-color: $dark-blue;
+}
+
+.main-page {
+	display: flex;
+	flex-direction: column;
+}
+
+.star {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1.2rem;
+	width: 4rem;
+	height: 4rem;
+	background-color: $medium-grey;
+	border-radius: 50%;
+
+	img {
+		width: 1.4rem;
+	}
+}
+
+h1.title {
+	margin: 1em 0;
+	font-size: 2.2rem;
+	color: $white;
+}
+
+.text {
+	line-height: 22px;
+	color: $light-grey;
+}
+
+ul.rating {
+	display: flex;
+	justify-content: space-between;
+	margin: 2em 0;
+	width: 100%;
+
+	li {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 40px;
+		width: 40px;
+		list-style: none;
+		border-radius: 50%;
+		background-color: $medium-grey;
+		color: $light-grey;
+		cursor: pointer;
+	}
+
+	li:hover {
+		background-color: $orange;
+		color: $white;
+	}
+
+	.active {
+		background-color: $light-grey;
+		color: $white;
+	}
+}
+
+button {
+	width: 100%;
+	padding: 1em;
+	border: none;
+	border-radius: 30px;
+	color: $white;
+	background-color: $orange;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	transition: background-color 0.3s;
+	cursor: pointer;
+}
+button:hover {
+	background-color: $white;
+	color: $orange;
+}
+
+.second-page {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.terminal-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.info-rating {
+	padding: 0.6em;
+	margin: 1.5em 0;
+	background-color: $medium-grey;
+	color: $orange;
+	border-radius: 50px;
+
+	p {
+		margin: 0 0.5em;
+	}
+}
+
+h2 {
+	font-size: 2.4rem;
+	color: $white;
+}
+
+.thanks {
+	margin: 1.5em 0;
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+@import './large';

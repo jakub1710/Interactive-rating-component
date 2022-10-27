@@ -1,0 +1,245 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background-color: #121417;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.4rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 325px;
+  padding: 1.8em;
+  border-radius: 15px;
+  background-color: #252d37;
+}
+
+.main-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.2rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(124, 135, 152, 0.2);
+  border-radius: 50%;
+}
+
+.star img {
+  width: 1.4rem;
+}
+
+h1.title {
+  margin: 1em 0;
+  font-size: 2.2rem;
+  color: white;
+}
+
+.text {
+  line-height: 22px;
+  color: #959eac;
+}
+
+ul.rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2em 0;
+  width: 100%;
+}
+
+ul.rating li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  width: 40px;
+  list-style: none;
+  border-radius: 50%;
+  background-color: rgba(124, 135, 152, 0.2);
+  color: #959eac;
+  cursor: pointer;
+}
+
+ul.rating li:hover {
+  background-color: #fb7413;
+  color: white;
+}
+
+ul.rating .active {
+  background-color: #959eac;
+  color: white;
+}
+
+button {
+  width: 100%;
+  padding: 1em;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  background-color: #fb7413;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: #fb7413;
+}
+
+.second-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.terminal-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-rating {
+  padding: 0.6em;
+  margin: 1.5em 0;
+  background-color: rgba(124, 135, 152, 0.2);
+  color: #fb7413;
+  border-radius: 50px;
+}
+
+.info-rating p {
+  margin: 0 0.5em;
+}
+
+h2 {
+  font-size: 2.4rem;
+  color: white;
+}
+
+.thanks {
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    font-size: 2.2rem;
+  }
+  .card {
+    max-width: 480px;
+    padding: 1.6em;
+  }
+  .main-page .star {
+    width: 6rem;
+    height: 6rem;
+  }
+  .main-page .star img {
+    width: 2.4rem;
+  }
+  .main-page h1.title {
+    margin: 1em 0;
+    font-size: 2.6rem;
+  }
+  .main-page .text {
+    font-size: 1.8rem;
+    line-height: 28px;
+  }
+  .main-page ul.rating {
+    margin: 1.6em 0;
+  }
+  .main-page ul.rating li {
+    height: 60px;
+    width: 60px;
+  }
+  .main-page button {
+    font-size: 1.8rem;
+  }
+  .second-page .terminal-img {
+    margin-top: 1em;
+  }
+  .second-page .info-rating {
+    padding: 0.4em;
+    font-size: 1.6rem;
+  }
+  .second-page h2 {
+    font-size: 2.8rem;
+  }
+  .second-page .thanks {
+    margin: 1em 0;
+    font-size: 1.8rem;
+    line-height: 30px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
