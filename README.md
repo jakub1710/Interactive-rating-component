@@ -31,3 +31,37 @@ Users should be able to:
 
 ![](./screenshots/interactive_rating_component-mobile.png)
 ![](./screenshots/interactive_rating_component-mobile-active.png)
+
+### Links
+
+- Live Site URL: https://jakub1710.github.io/Interactive-rating-component/
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- SCSS
+- Flexbox
+- JavaScript
+- Mobile-first and Responsive Web Design (RWD)
+
+### What I learned
+
+I learned using forEach and implement "e.target", what it was neccesery in this project. See below:
+
+```js
+const rating = (e) => {
+	liItems.forEach((item) => {
+		item.classList.remove('active');
+		e.target.classList.add('active');
+	});
+
+	stars = e.target.textContent;
+	spanChosen.innerHTML = stars;
+};
+```
+## Author
+
+- Frontend Mentor - [@jakub1710](https://www.frontendmentor.io/profile/jakub1710)
+- LinkedIn - [@jakub](https://www.linkedin.com/in/jakub-kucia-01aa10224/)
