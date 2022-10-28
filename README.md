@@ -29,8 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshots/interactive_rating_component-mobile.png)
-![](./screenshots/interactive_rating_component-mobile-active.png)
+![](./screenshots/interactive_rating_component-mobile.png) ![](./screenshots/interactive_rating_component-mobile-active.png)
 
 ### Links
 
